@@ -1,22 +1,10 @@
-let u = 'Admin' ;
-let p = 1;
- 
+let username=document.getElementById('user').value;
+let password=document.getElementById('pass').value;
 
-let username =function(){
-    document.getElementById('user')
-}
-let password = function(){
-    document.getElementById('pass')
-}
-
-document.getElementById('btn').onclick=function(){
-    if (u==username && p==password){
-        console.log('Success')
+function login(){
+    if (username.value=='Admin' && password.value==='Admin@123'){
+        console.log('Login Successfull')
     }
-    else console.log('Error') ;   
+    else{console.log('Incorrect Username or password');
+    }
 }
-
-// if (name==username || pass==password){
-//     console.log('Success')
-// }
-// else console.log('Error') ;
